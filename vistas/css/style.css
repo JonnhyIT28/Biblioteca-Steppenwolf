@@ -26,14 +26,15 @@ td, th {
 }
 
 /*HEADER*/
-.header {
+header {
+    width: 100%;
     background-image: url("../imagenes/ladarkacademia.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-.header h1 {
+header h1 {
     padding-left: 47px;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -44,7 +45,7 @@ td, th {
     color: #cce5ff;
 }
 
-.header audio {
+header audio {
     position: fixed;
     float: left;
 }
@@ -141,7 +142,7 @@ footer {
     border: 2px black solid;
 }   
 
-.p_footer {
+.footer-p1 {
     margin-top: 50px;
     font-family: 'Dancing Script';
     font-size: 80px;
@@ -149,42 +150,16 @@ footer {
     color: #cce5ff;
 }
 
-.a_footer {
-    margin-left: 800px;
-    color: white;
-    text-decoration: none;
-    display: inline-block;
+.footer-p2 {
+    margin-top: 25px;
+    text-align: center;
     font-family: 'Dancing Script';
     font-size: 35px;
 }
 
-/*NOSOTROS.PHP*/
-
-.nosotros_img1 {
-    width: 750px;
-    height: 750px;
-    margin-left: 100px;
-    margin-bottom: 100px;
-    margin-top: 100px;
-    float: left;
-}
-
-.nosotros_titulo1 {
-    margin-right: 100px;
-    margin-top: 300px;
-    font-size: 60px;
-    font-family: 'Dancing Script';
-    color: #53565a;
-    float: right;
-}
-
-.nosotros_parrafo {
-    margin-right: 95px;
-    font-family: 'Dancing Script';
-    color: #58626d;
-    text-align: center;
-    font-size: 30px;
-    float: right;
+footer a {
+    color: white;
+    text-decoration: none;
 }
 
 /*CONTACTO.PHP*/

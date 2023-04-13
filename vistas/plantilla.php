@@ -26,56 +26,60 @@ session_start();
     <title>Biblioteca SteppenWolf</title>
 </head>
 <header>
-    <time class="fecha">
-    <?php 
-    date_default_timezone_set("America/Argentina/Buenos_Aires");
-    echo date("d/M/Y:H:i");
-    $fecha = date ("d/M/Y:H:i");
-    ?>
-    </time>
-    <nav class="header">
-        <audio controls autoplay loop>
-        <source src="vistas/audio/pieza1.mp3" type="audio/mp3">
-        </audio>
-        
-        <h1>BIBLIOTECA STEPPENWOLF</h1>
-        
-    
-        <ul class="menu">
-            <li><a title="login" href="index.php?ruta=login">LOGIN</a></li>
-            <li><a title="Agregar Libro" href="index.php?ruta=agregarlibro">AGREGAR LIBRO</a></li>
-            <li><a title="Biblioteca" href="index.php?ruta=biblioteca">BIBLIOTECA</a></li>
-            <li><a title="Cerrar Sesion" href="index.php?ruta=fin">CERRAR SESION</a></li>
-        </ul>
-    </nav>
-</header>
-<body>
+    <section>
+        <div>
+            <time class="fecha">
+                <?php 
+                    date_default_timezone_set("America/Argentina/Buenos_Aires");
+                    echo date("d/M/Y:H:i");
+                    $fecha = date ("d/M/Y:H:i");
+                ?>
+            </time>
+            <audio controls autoplay loop>
+                <source src="vistas/audio/pieza1.mp3" type="audio/mp3">
+            </audio>
+            <h1>BIBLIOTECA STEPPENWOLF</h1>
+        </div>
 
+        <div>
+            <nav>
+                <ul class="menu">
+                    <li><a title="login" href="index.php?ruta=login">LOGIN</a></li>
+                    <li><a title="Agregar Libro" href="index.php?ruta=agregarlibro">AGREGAR LIBRO</a></li>
+                    <li><a title="Biblioteca" href="index.php?ruta=biblioteca">BIBLIOTECA</a></li>
+                    <li><a title="Cerrar Sesion" href="index.php?ruta=fin">CERRAR SESION</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+</header>
+
+<body>
     <section>
         <?php
-        if (isset($_GET['ruta'])){
-        if(
-            $_GET['ruta'] == "login" ||
-            $_GET['ruta'] == "agregarlibro" ||
-            $_GET['ruta'] == "biblioteca" ||
-            $_GET['ruta'] == "editar" ||
-            $_GET['ruta'] == "fin"
-        ){
-            include "vistas/paginas/" . $_GET["ruta"] .".php";
-        } else{
-            include "vistas/paginas/error404.php";
-            } 
+            if (isset($_GET['ruta'])){
+            if(
+                $_GET['ruta'] == "login" ||
+                $_GET['ruta'] == "agregarlibro" ||
+                $_GET['ruta'] == "biblioteca" ||
+                $_GET['ruta'] == "editar" ||
+                $_GET['ruta'] == "fin"
+            ){
+                include "vistas/paginas/" . $_GET["ruta"] .".php";
             } else{
-            include "vistas/paginas/login.php";
-        }
+                include "vistas/paginas/error404.php";
+                } 
+                } else{
+                include "vistas/paginas/login.php";
+            }
         ?>
     </section>
-
 </body>
 
 <footer class="footer">
-    <p class="p_footer">Jonathan Ezequiel Ordoñez</p>
-    <p><a class="a_footer" href="miemail@gmail.com">miemail@gmail.com</a></p>
-
+    <section>
+        <p class="footer-p1">Jonathan Ezequiel Ordoñez</p>
+        <p class="footer-p2"><a href="miemail@gmail.com">miemail@gmail.com</a></p>
+    </section>
 </footer>
 </html>
