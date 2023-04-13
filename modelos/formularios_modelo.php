@@ -23,11 +23,11 @@ class ModeloFormularios{
 
 
 
-    //SELECCIONAR REGISTROS
+    //SELECCIONAR INGRESO
     static public function mdlSeleccionarRegistro($tabla, $item, $valor){
 
         if ($item == null && $valor == null ){
-            $stmt = Conexion::conectar()->prepare("SELECT *,DATE_FORMAT(fecha, '%d/%m/%Y') AS fecha FROM $tabla ORDER BY id DESC");
+            $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla");
 
             $stmt->execute();
 
@@ -35,7 +35,7 @@ class ModeloFormularios{
 
         }   else{
 
-            $stmt = Conexion::conectar()->prepare("SELECT *,DATE_FORMAT(fecha, '%d/%m/%Y') AS fecha FROM $tabla WHERE $item = :$item ORDER BY id DESC");
+            $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $item = :$item");
 
             $stmt->bindParam(":" . $item, $valor, PDO::PARAM_STR);
 
