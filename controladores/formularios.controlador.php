@@ -58,7 +58,13 @@ class ControladorFormularios{
     }
 
 // ------------------------------------------------------------------------------------------
-    static public function ctrSeleccionarLibros ($item, $valor){
+static public function ctrSeleccionarRegistros ($item, $valor){
+    $tabla = "administradores";
+    $respuesta = ModeloFormularios::mdlSeleccionarRegistro($tabla, $item, $valor);
+    return $respuesta;
+}    
+
+static public function ctrSeleccionarLibros ($item, $valor){
         $tabla = "libros";
         $respuesta = ModeloFormularios::mdlSeleccionarLibros($tabla, $item, $valor);
         return $respuesta;

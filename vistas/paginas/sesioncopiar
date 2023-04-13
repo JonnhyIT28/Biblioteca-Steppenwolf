@@ -15,7 +15,7 @@ if(isset($_SESSION["validarIngreso"])){
         return;
     }
 }
-
+require_once "controladores/formularios.controlador.php";
 $usuarios = ControladorFormularios::ctrSeleccionarRegistros(null, null);
 
 ?>
