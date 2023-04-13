@@ -4,11 +4,11 @@
         <h2 class="contacto_h2">Administracion</h2>
         
         <form class="contacto_form1" action="" method="POST"> 
-            <label for="email">Usuario</label> 
-            <input type="text" id="email" name="ingresoEmail"/> 
+            <label for="usuario">Usuario</label> 
+            <input type="text" id="usuario" name="ingresoUsuario"/> 
             <br>
-            <label for="pwd">Clave</label>
-            <input type="password" id="pwd" name="ingresoPassword"/>
+            <label for="password">Clave</label>
+            <input type="password" id="password" name="ingresoPassword"/>
             <br>
 
             <?php

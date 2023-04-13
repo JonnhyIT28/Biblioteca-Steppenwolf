@@ -2,23 +2,42 @@
 require("modelos/formularios_modelo.php");
 
 class ControladorFormularios{
-    static public function ctrRegistro(){
-        
-        
-        if(isset($_POST["registroNombre"])){
 
-            $tabla = "registros";
+    public function ctrIngreso(){
 
-            $datos = array(
-                "nombre" => $_POST["registroNombre"],
-                "email" => $_POST["registroEmail"],
-                "password" => $_POST["registroPassword"]
-            );
-            
-            $respuesta = ModeloFormularios::mdlRegistro($tabla, $datos);
-            return $respuesta;
+        if(isset($_POST["ingresoUsuario"])){
+            $tabla = "administradores";
+            $item = "usuario";
+            $valor = $_POST["ingresoUsuario"];
+
+            $respuesta = ModeloFormularios::mdlSeleccionarRegistro($tabla, $item, $valor);
+
+            if ($respuesta["usuario"] == $_POST["ingresoUsuario"] && $respuesta["password"] == $_POST["ingresoPassword"]){
+                $_SESSION["validarIngreso"] = "ok";
+
+                echo '<script>
+
+                if (window.history.replaceState ) {
+                    window.history.replaceState( null, null, window.location.href );
+
+                }
+
+                window.location = "index.php?ruta=biblioteca";
+
+            </script>';
+            }   else {
+                echo '<script> if (window.history.replaceState ) {
+                    
+                    window.history.replaceState( null, null, window.location.href );
+                    
+            } </script>';
+            echo '<div class="alert alert-danger"> Error, intente nuevamente</div>';
+
+            }
         }
     }
+
+//----------------------------------------------------------------------------------------------------
 
     static public function ctrRegistroLibro(){
         
@@ -45,42 +64,6 @@ class ControladorFormularios{
         return $respuesta;
     }
 
-//---------------------------------------------------------------------------------------------
-    public function ctrIngreso(){
-
-        if(isset($_POST["ingresoEmail"])){
-            $tabla = "registros";
-            $item = "email";
-            $valor = $_POST["ingresoEmail"];
-
-            $respuesta = ModeloFormularios::mdlSeleccionarRegistro($tabla, $item, $valor);
-
-            if ($respuesta["email"] == $_POST["ingresoEmail"] && $respuesta["password"] == $_POST["ingresoPassword"]){
-                $_SESSION["validarIngreso"] = "ok";
-
-                echo '<script>
-
-                if (window.history.replaceState ) {
-                    window.history.replaceState( null, null, window.location.href );
-
-                }
-
-                window.location = "index.php?ruta=biblioteca";
-
-            </script>';
-            }   else {
-                echo '<script> if (window.history.replaceState ) {
-                    
-                    window.history.replaceState( null, null, window.location.href );
-                    
-            } </script>';
-            echo '<div class="alert alert-danger"> Error, intente nuevamente</div>';
-
-            }
-        }
-    }
-
-//----------------------------------------------------------------------------------------------------
 
     static public function ctrSeleccionarLibros ($item, $valor){
         $tabla = "libros";
