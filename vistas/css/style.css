@@ -26,14 +26,14 @@ td, th {
 }
 
 /*HEADER*/
-.titulo {
+.header {
     background-image: url("../imagenes/ladarkacademia.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-.titulo h1 {
+.header h1 {
     padding-left: 47px;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -44,7 +44,7 @@ td, th {
     color: #cce5ff;
 }
 
-.titulo audio {
+.header audio {
     position: fixed;
     float: left;
 }

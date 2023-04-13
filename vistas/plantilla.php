@@ -33,7 +33,7 @@ session_start();
     $fecha = date ("d/M/Y:H:i");
     ?>
     </time>
-    <nav class="titulo">
+    <nav class="header">
         <audio controls autoplay loop>
         <source src="vistas/audio/pieza1.mp3" type="audio/mp3">
         </audio>
