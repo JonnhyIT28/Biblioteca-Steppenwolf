@@ -45,7 +45,7 @@ class ControladorFormularios{
         return $respuesta;
     }
 
-
+//---------------------------------------------------------------------------------------------
     public function ctrIngreso(){
 
         if(isset($_POST["ingresoEmail"])){
