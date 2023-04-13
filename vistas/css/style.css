@@ -56,7 +56,7 @@ td, th {
     color: bisque;
 }
 
-nav ul.menu_principal {
+nav ul.menu {
     list-style-type: circle;  
     list-style-position: outside; 
     background: #0a0000d8;
@@ -64,13 +64,13 @@ nav ul.menu_principal {
     border: 2px solid black;
 }
 
-nav ul.menu_principal li{
+nav ul.menu li{
     color: whitesmoke;
     margin: 5px;
     display: inline;
 }
 
-nav ul.menu_principal li a{
+nav ul.menu li a{
     color: white;
     padding: 14px 20px;
     text-align: center;
@@ -79,7 +79,7 @@ nav ul.menu_principal li a{
     font-family: 'Dancing Script';
 }
 
-nav ul.menu_principal li a:link.a1 {    /*sin visitar*/
+nav ul.menu li a:link.a1 {    /*sin visitar*/
     background-color: #f44336;
     color: white;
     padding: 14px 25px;
@@ -89,12 +89,12 @@ nav ul.menu_principal li a:link.a1 {    /*sin visitar*/
 }
 
             /*cuando pasas el mouse por arriba*/
-nav ul.menu_principal li a:hover {
+nav ul.menu li a:hover {
     color:red;
     text-decoration: underline;
 }
             /*al hacerle click*/
-nav ul.menu_principal li a:active {
+nav ul.menu li a:active {
     color: brown;
     text-decoration: underline;
 }

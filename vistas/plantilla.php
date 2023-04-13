@@ -41,7 +41,7 @@ session_start();
         <h1>BIBLIOTECA STEPPENWOLF</h1>
         
     
-        <ul class="menu_principal">
+        <ul class="menu">
             <li><a title="login" href="index.php?ruta=login">LOGIN</a></li>
             <li><a title="Agregar Libro" href="index.php?ruta=agregarlibro">AGREGAR LIBRO</a></li>
             <li><a title="Biblioteca" href="index.php?ruta=biblioteca">BIBLIOTECA</a></li>
