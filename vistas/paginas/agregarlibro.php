@@ -54,5 +54,5 @@ $libros = ControladorFormularios::ctrSeleccionarLibros(null, null);
 
         </form>
     </div>
-    <img class="contacto_img1" src="vistas/imagenes/libroviejo.png" >
+    <img class="img" src="vistas/imagenes/libroviejo.png" >
 </body>

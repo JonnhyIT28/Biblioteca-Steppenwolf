@@ -80,12 +80,6 @@ nav ul.menu li a:active {
     color: brown;
     text-decoration: underline;
 }
-
-.table { 
-    width: 100%; 
-    border-collapse: collapse; 
-}
-
 /*FOOTER*/
 
 footer {
@@ -122,27 +116,9 @@ footer a:hover {
     text-decoration: underline;
     color: white;
 }
+/*Login.php*/
 
-/* Zebra striping */
-tr { 
-    background: #eee; 
-}
-th { 
-    background: #333; 
-    color: white; 
-    font-weight: bold; 
-}
-td, th { 
-    padding: 6px; 
-    border: 1px solid #ccc; 
-    text-align: left; 
-}
-
-
-
-/*INDEX.PHP*/
-
-.index_img1 {
+.img {
     width: 750px;
     height: 750px;
     margin-left: 100px;
@@ -284,6 +260,26 @@ input {
         font-size: 30px;
     }
 
+
+/* Zebra striping */
+.table { 
+    width: 100%; 
+    border-collapse: collapse; 
+}
+
+tr { 
+    background: #eee; 
+}
+th { 
+    background: #333; 
+    color: white; 
+    font-weight: bold; 
+}
+td, th { 
+    padding: 6px; 
+    border: 1px solid #ccc; 
+    text-align: left; 
+}
     /* 
 	Generic Styling, for Desktops/Laptops 
 	*/
