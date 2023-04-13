@@ -1,0 +1,776 @@
+html {
+    background-color: rgba(17, 1, 1, 0.966);
+    font-family: 'Dancing Script';
+    color: #cce5ff;
+}
+
+/*RESPONSIVE*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.row:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+[class*="col-"] {
+    width: 100%;
+}
+    
+/*HEADER*/
+.header {
+    background-image: url("imagenes/ladarkacademia.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 60px;
+}
+
+header p {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.music {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.music audio {
+    width: 350px;
+}
+
+
+nav ul#menu {
+    margin: 0px -15px -15px -15px;
+    padding: 0;
+    background: #0a0000d8;
+}
+
+nav ul#menu li{
+    list-style-type: none;
+    display: inline;
+}
+
+nav ul#menu li a{
+    border: 1px solid black;
+    color:#cce5ff;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+
+/*cuando pasas el mouse por arriba*/
+nav ul#menu li a:hover {
+    color:darkmagenta;
+    text-decoration: underline;
+}
+
+/*al hacerle click*/
+nav ul#menu li a:active {
+    color: darkmagenta;
+    text-decoration: underline;
+}
+
+/*MAIN*/
+
+/* SECTION 1 */
+
+#sect1-div1 {
+    padding: 15px 0px 15px 0px;
+}
+
+#sect1-div1 img {
+    width: 100%;
+    height: auto;
+}
+
+#sect1-div2 h1 {
+    font-family: 'Dancing Script';
+    font-size: 60px;
+    text-align: center;
+
+}
+
+#sect1-div2 p {
+    margin-top: 15px;
+    padding-bottom: 20px;
+
+    font-size: 30px;
+    text-align: center;
+
+}
+/*SECTION 2*/
+
+#sect2-div {
+    margin-bottom: 30px;
+    border: 1px solid black;
+}
+
+#sect2-div1 {
+    text-align: center;
+    height: auto;
+
+    background-color: black;
+    background-image: url(imagenes/darkacademia.jpg);
+    background-size: cover;
+}
+
+#sect2-div1 h1 {
+    font-family: 'Dancing Script';
+    font-size: 60px;
+    text-align: center;
+}
+
+#sect2-div1 h3 {
+    padding-top: 15px;
+    font-size: 45px;
+}
+
+#sect2-div1 p {
+    font-size: 30px;
+}
+
+/*FOOTER*/
+
+footer {
+    height: auto;
+    background-image: url("imagenes/footer.jpg");
+    background-repeat: repeat-x;
+
+    border: 2px black solid;
+}   
+
+.h1_footer {
+    padding-top: 10px;
+    font-family: 'Dancing Script';
+    font-size: 60px;
+    text-align: center;
+
+}
+
+footer p{
+    font-size: 28px;
+    text-align: center;
+    margin-top: 20px;
+}
+.a_footer {
+    color: #cce5ff;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+
+[class*="col-"] {
+    width: 100%;
+}
+
+/*HEADER*/
+.header {
+    background-image: url("imagenes/ladarkacademia.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 60px;
+}
+
+header p {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.music {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.music audio {
+    width: 350px;
+}
+
+
+nav ul#menu {
+    margin: 0px -15px -15px -15px;
+    padding: 0;
+    background: #0a0000d8;
+}
+
+nav ul#menu li{
+    list-style-type: none;
+    display: inline;
+}
+
+nav ul#menu li a{
+    border: 1px solid black;
+    color:#cce5ff;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+
+/*cuando pasas el mouse por arriba*/
+nav ul#menu li a:hover {
+    color:darkmagenta;
+    text-decoration: underline;
+}
+
+/*al hacerle click*/
+nav ul#menu li a:active {
+    color: darkmagenta;
+    text-decoration: underline;
+}
+
+/*MAIN*/
+
+/* SECTION 1 */
+
+#sect1-div1 {
+    padding: 15px 0px 15px 0px;
+}
+
+#sect1-div1 img {
+    width: 100%;
+    height: auto;
+}
+
+#sect1-div2 h1 {
+    font-family: 'Dancing Script';
+    font-size: 60px;
+    text-align: center;
+
+}
+
+#sect1-div2 p {
+    margin-top: 15px;
+    padding-bottom: 20px;
+
+    font-size: 30px;
+    text-align: center;
+
+}
+/*SECTION 2*/
+
+#sect2-div {
+    margin-bottom: 30px;
+    border: 1px solid black;
+}
+
+#sect2-div1 {
+    text-align: center;
+    height: auto;
+
+    background-color: black;
+    background-image: url(imagenes/darkacademia.jpg);
+    background-size: cover;
+}
+
+#sect2-div1 h1 {
+    font-family: 'Dancing Script';
+    font-size: 60px;
+    text-align: center;
+}
+
+#sect2-div1 h3 {
+    padding-top: 15px;
+    font-size: 45px;
+}
+
+#sect2-div1 p {
+    font-size: 30px;
+}
+
+/*FOOTER*/
+
+footer {
+    height: auto;
+    background-image: url("imagenes/footer.jpg");
+    background-repeat: repeat-x;
+
+    border: 2px black solid;
+}   
+
+.h1_footer {
+    padding-top: 10px;
+    font-family: 'Dancing Script';
+    font-size: 60px;
+    text-align: center;
+
+}
+
+footer p{
+    font-size: 28px;
+    text-align: center;
+    margin-top: 20px;
+}
+.a_footer {
+    color: #cce5ff;
+    text-decoration: none;
+    font-size: 28px;
+}
+
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+/*HEADER*/
+.header {
+    height: auto;
+    background-image: url("../imagenes/ladarkacademia.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid black;
+}
+
+header h1 {
+    padding: 40px 0px;
+    text-align: center;
+    font-size: 80px;
+}
+
+.fecha {
+    float:none;
+    font-family: 'Dancing Script';
+    font-size: 25px;
+    color: bisque;
+}
+
+.music {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.music audio {
+    width: 350px;
+}
+
+
+nav ul#menu {
+    list-style-type: circle;  
+    list-style-position: outside; 
+    background: #0a0000d8;
+    border: 2px solid black;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+nav ul#menu li{
+    color: whitesmoke;
+    display: inline;
+    
+}
+
+nav ul#menu li a{
+    color: white;
+    padding: 14px 30px;
+    font-size: 15px;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Dancing Script';
+}
+
+/*cuando pasas el mouse por arriba*/
+nav ul#menu li a:hover {
+    color:darkmagenta;
+    text-decoration: underline;
+}
+
+/*al hacerle click*/
+nav ul#menu li a:active {
+    color: darkmagenta;
+    text-decoration: underline;
+}
+
+/*MAIN*/
+
+/* SECTION 1 */
+#sect1-div1 img {
+    max-width: 70%;
+    height: auto;
+    margin-left: 25%;
+    margin-top: 20px;
+}
+
+#sect1-div2 {
+    height:30vh;
+    text-align: center;
+}
+
+#sect1-div2 h1 {
+    margin-top: 40px;
+
+    color:#cce5ff; 
+    font-family: 'Dancing Script';
+    font-size: 70px;
+}
+
+#sect1-div2 p {
+    margin-top: 35px;
+    font-size: 35px;
+    color: #cce5ff;
+
+}
+
+
+/*FOOTER*/
+
+footer {
+    bottom:0;
+    height: auto;
+    background-image: url("../imagenes/footer.jpg");
+    background-repeat: repeat-x;
+
+    text-align: center;
+    border: 2px black solid;
+}   
+
+#footer_p1 {
+    margin-top: 25px;
+    font-family: 'Dancing Script';
+    font-size: 80px;
+    color: #cce5ff;
+    padding-bottom: 25px;
+}
+
+#footer_a1 {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Dancing Script';
+    font-size: 35px;
+    padding-bottom: 25px;
+
+}
+
+#footer_p3 {
+    padding-bottom: 25px;
+    font-family: 'Dancing Script';
+    font-size: 35px;
+    color: white;
+}
+
+#footer_p4 {
+    padding-bottom: 80px;
+    font-family: 'Dancing Script';
+    font-size: 35px;
+    color: white;
+}
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+/*HEADER*/
+.header {
+    height: auto;
+    background-image: url("../imagenes/ladarkacademia.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid black;
+}
+
+header h1 {
+    padding: 40px 0px;
+    text-align: center;
+    font-size: 80px;
+}
+
+.fecha {
+    float:none;
+    font-family: 'Dancing Script';
+    font-size: 25px;
+    color: bisque;
+}
+
+.music {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.music audio {
+    width: 350px;
+}
+
+
+nav ul#menu {
+    list-style-type: circle;  
+    list-style-position: outside; 
+    background: #0a0000d8;
+    border: 2px solid black;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+nav ul#menu li{
+    color: whitesmoke;
+    display: inline;
+    
+}
+
+nav ul#menu li a{
+    color: white;
+    padding: 14px 30px;
+    font-size: 15px;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Dancing Script';
+}
+
+/*cuando pasas el mouse por arriba*/
+nav ul#menu li a:hover {
+    color:darkmagenta;
+    text-decoration: underline;
+}
+
+/*al hacerle click*/
+nav ul#menu li a:active {
+    color: darkmagenta;
+    text-decoration: underline;
+}
+
+/*MAIN*/
+
+/* SECTION 1 */
+
+#sect1-div1 img {
+    max-width: 70%;
+    height: auto;
+    margin-left: 25%;
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+#sect1-div2 {
+    height:50vh;
+    text-align: center;
+}
+
+#sect1-div2 h1 {
+    margin-top: 100px;
+
+    color:#cce5ff; 
+    font-family: 'Dancing Script';
+    font-size: 70px;
+}
+
+#sect1-div2 p {
+    margin-top: 35px;
+    font-size: 35px;
+    color: #cce5ff;
+
+}
+
+
+/*FOOTER*/
+
+footer {
+    height: auto;
+    background-image: url("../imagenes/footer.jpg");
+    background-repeat: repeat-x;
+
+    text-align: center;
+    border: 2px black solid;
+}   
+
+#footer_p1 {
+    margin-top: 40px;
+    font-family: 'Dancing Script';
+    font-size: 80px;
+    color: #cce5ff;
+}
+
+#footer_a1 {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Dancing Script';
+    font-size: 35px;
+
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+/*HEADER*/
+.header {
+    background-image: url("../imagenes/ladarkacademia.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid black;
+}
+
+header h1 {
+    padding: 40px 0px;
+    text-align: center;
+    font-size: 80px;
+}
+
+.fecha {
+    float:none;
+    font-family: 'Dancing Script';
+    font-size: 25px;
+    color: bisque;
+}
+
+.music {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.music audio {
+    width: 350px;
+}
+
+
+nav ul#menu {
+    list-style-type: circle;  
+    list-style-position: outside; 
+    background: #0a0000d8;
+    border: 2px solid black;
+    text-align: center;
+    padding: 15px 0px;
+}
+
+nav ul#menu li{
+    color: whitesmoke;
+    display: inline;
+    
+}
+
+nav ul#menu li a{
+    color: white;
+    padding: 14px 50px;
+    font-size: 15px;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Dancing Script';
+}
+
+/*cuando pasas el mouse por arriba*/
+nav ul#menu li a:hover {
+    color:darkmagenta;
+    text-decoration: underline;
+}
+
+/*al hacerle click*/
+nav ul#menu li a:active {
+    color: darkmagenta;
+    text-decoration: underline;
+}
+
+/*MAIN*/
+
+/* SECTION 1 */
+
+#sect1-div1 img {
+    max-width: 70%;
+    height: auto;
+    margin-left: 130px;
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+#sect1-div2 {
+    height:50vh;
+    text-align: center;
+}
+
+#sect1-div2 h1 {
+    margin-top: 100px;
+
+    color:#cce5ff; 
+    font-family: 'Dancing Script';
+    font-size: 90px;
+}
+
+#sect1-div2 p {
+    margin-top: 35px;
+    font-size: 35px;
+    color: #cce5ff;
+
+}
+
+
+/*FOOTER*/
+
+footer {
+    height: auto;
+    background-image: url("../imagenes/footer.jpg");
+    background-repeat: repeat-x;
+
+    text-align: center;
+    border: 2px black solid;
+}   
+
+#footer_p1 {
+    margin-top: 40px;
+    font-family: 'Dancing Script';
+    font-size: 80px;
+    color: #cce5ff;
+}
+
+#footer_a1 {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Dancing Script';
+    font-size: 35px;
+
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+}

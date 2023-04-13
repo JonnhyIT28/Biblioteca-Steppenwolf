@@ -1,0 +1,21 @@
+<?php
+
+if(isset($_SESSION["validarIngreso"])){
+
+    echo '<script>window.location = "index.php?ruta=biblioteca";</script>';
+
+    return;
+
+}else{
+
+    if($_SESSION["validarIngreso"] != "ok"){
+
+        echo '<script>window.location = "index.php?=biblioteca";</script>';
+
+        return;
+    }
+}
+
+$usuarios = ControladorFormularios::ctrSeleccionarRegistros(null, null);
+
+?>
