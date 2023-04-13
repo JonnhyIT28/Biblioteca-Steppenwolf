@@ -27,8 +27,10 @@ td, th {
 
 /*HEADER*/
 .titulo {
-    background-image: url("../imagenes/header_dark_academia.png");
-    background-repeat: repeat-x;
+    background-image: url("../imagenes/ladarkacademia.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .titulo h1 {
