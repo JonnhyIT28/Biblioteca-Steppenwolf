@@ -6,9 +6,39 @@ html {
     background-color: rgba(17, 1, 1, 0.966);
 }
 
+
+/*GRID LAYOUT */
+.grid-container {
+    height: 100%;
+    display: grid;
+    grid-gap: 50px;
+    grid-template: 250px auto 250px / repeat(2, 50%);
+    grid-template-areas: 
+        "h h"
+        "form img"
+        "f f";
+}
+
+.header {
+    grid-area: h;
+}
+
+.footer {
+    grid-area: f;
+}
+
+/*login.php*/
+.form {
+    grid-column: 1/2;
+}
+
+.img {
+    grid-column: 2/3;
+}
+
 /*HEADER*/
 header {
-    width: 100%;
+    height: 100%;
     background-image: url("../imagenes/ladarkacademia.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,10 +46,7 @@ header {
 }
 
 header h1 {
-    padding-left: 47px;
     padding-top: 50px;
-    padding-bottom: 50px;
-
     font-family: 'Dancing Script';
     font-size: 80px;
     text-align: center;
@@ -28,14 +55,10 @@ header h1 {
 
 header audio {
     position: fixed;
-    float: left;
 }
 
-.fecha {
-    float: right;
-    font-family: 'Dancing Script';
-    font-size: 25px;
-    color: bisque;
+nav {
+    padding-top: 22px;
 }
 
 nav ul.menu {
@@ -48,13 +71,12 @@ nav ul.menu {
 
 nav ul.menu li{
     color: whitesmoke;
-    margin: 5px;
     display: inline;
 }
 
 nav ul.menu li a{
     color: white;
-    padding: 14px 20px;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -63,11 +85,6 @@ nav ul.menu li a{
 
 nav ul.menu li a:link.a1 {    /*sin visitar*/
     background-color: #f44336;
-    color: white;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
 }
 
             /*cuando pasas el mouse por arriba*/
@@ -83,17 +100,15 @@ nav ul.menu li a:active {
 /*FOOTER*/
 
 footer {
-    float: left;
-    width: 100%;
-    height: 300px;
+    height: 100%;
     background-image: url("../imagenes/footer.jpg");
     background-repeat: repeat-x;
+    background-size: cover;
 
     border: 2px black solid;
 }   
 
 .footer-p1 {
-    margin-top: 50px;
     font-family: 'Dancing Script';
     font-size: 80px;
     text-align: center;
@@ -101,7 +116,6 @@ footer {
 }
 
 .footer-p2 {
-    margin-top: 25px;
     text-align: center;
     font-family: 'Dancing Script';
     font-size: 35px;
@@ -117,148 +131,6 @@ footer a:hover {
     color: white;
 }
 /*Login.php*/
-
-.img {
-    width: 750px;
-    height: 750px;
-    margin-left: 100px;
-    margin-top: 60px;
-    margin-bottom: 100px;
-    float: left;
-}
-
-.titulo1{
-    margin-left: 100px;
-    margin-top: 300px;
-    font-size: 70px;
-    font-family: 'Dancing Script';
-    color: #53565a;
-    float: left;
-}
-
-.parrafo{
-
-    margin-left: 125px;
-    font-family: 'Dancing Script';
-    color: #58626d;
-    text-align: center;
-    font-size: 35px;
-    float: left;
-}
-
-/*CONTACTO.PHP*/
-
-.contacto_div1 {
-    float: left;
-    color: aliceblue;
-    margin-left: 100px;
-    margin-top: 150px;
-
-}
-
-.contacto_h2 {
-    margin-bottom: 50px;
-    font-family: 'Dancing Script';
-    font-size: 100px;
-    text-align: center;
-
-}
-
-.contacto_form1 {
-    box-sizing: border-box;
-    text-align: center;
-    font-family: 'Dancing Script';
-    font-size: 30px;
-}
-
-label {
-    padding: 12px 12px 12px 0;
-    display: inline-block;
-    
-}
-
-#label_com {
-    display: block;
-}
-
-#comentario {
-    margin-top: 15px;
-}
-
-input {
-    width: 200px;
-}
-
-.contacto_img1 {
-    width: 700px;
-    height: 700px;
-    margin-top: 70px;
-    margin-right: 150px;
-    margin-bottom: 50px;
-    float: right;
-}
-
-.mensaje {
-    margin-top: 25px;
-    margin-left: 300px;
-}
-
-.enviar {
-    margin-bottom: 150px;
-}
-
-#biblioh1 {
-    padding-left: 120px;
-    margin-bottom: 50px;
-    font-family: 'Dancing Script';
-    font-size: 100px;
-    text-align: center;
-    color: aliceblue;
-    margin-top: 150px;
-}
-
-.biblioimg1 {
-    padding-left: 150px;
-    float:left
-}
-
-#biblioh2 {
-    font-size: 50px;
-}
-
-#portada {
-    width: 300px;
-    height: 300px;
-}
-
-#eliminar {
-    float: left;
-    font-family: 'Dancing Script';
-    color: whitesmoke;
-    font-size: 30px;
-}
-
-.biblioh3 {
-    font-family: 'Dancing Script';
-    color: whitesmoke;
-    font-size: 30px;
-}
-
-.titulosug {
-        color: white;
-        margin-left: 700px;
-        margin-top: 100px;
-        margin-bottom: 180px;
-        font-size: 35px;
-        font-family: 'Dancing Script';   
-    }
-
-.form1 {
-        box-sizing: border-box;
-        text-align: center;
-        font-family: 'Dancing Script';
-        font-size: 30px;
-    }
 
 
 /* Zebra striping */

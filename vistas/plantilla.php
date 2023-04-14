@@ -25,23 +25,17 @@ session_start();
 
     <title>Biblioteca SteppenWolf</title>
 </head>
-<header>
-    <section>
-        <div>
-            <time class="fecha">
-                <?php 
-                    date_default_timezone_set("America/Argentina/Buenos_Aires");
-                    echo date("d/M/Y:H:i");
-                    $fecha = date ("d/M/Y:H:i");
-                ?>
-            </time>
-            <audio controls autoplay loop>
+
+<div class="grid-container">
+    <div class="header">
+        <header>
+            
+            <audio class="audio" controls autoplay loop>
                 <source src="vistas/audio/pieza1.mp3" type="audio/mp3">
             </audio>
-            <h1>BIBLIOTECA STEPPENWOLF</h1>
-        </div>
 
-        <div>
+            <h1>BIBLIOTECA STEPPENWOLF</h1>
+
             <nav>
                 <ul class="menu">
                     <li><a title="login" href="index.php?ruta=login">LOGIN</a></li>
@@ -50,12 +44,11 @@ session_start();
                     <li><a title="Cerrar Sesion" href="index.php?ruta=fin">CERRAR SESION</a></li>
                 </ul>
             </nav>
-        </div>
-    </section>
-</header>
 
-<body>
-    <section>
+        </header>
+    </div>
+
+    <body>
         <?php
             if (isset($_GET['ruta'])){
             if(
@@ -67,19 +60,22 @@ session_start();
             ){
                 include "vistas/paginas/" . $_GET["ruta"] .".php";
             } else{
-                include "vistas/paginas/error404.php";
+            include "vistas/paginas/error404.php";
                 } 
                 } else{
                 include "vistas/paginas/login.php";
             }
         ?>
-    </section>
-</body>
+    </body>
 
-<footer class="footer">
-    <section>
-        <p class="footer-p1">Jonathan Ezequiel Ordoñez</p>
-        <p class="footer-p2"><a href="miemail@gmail.com">miemail@gmail.com</a></p>
-    </section>
-</footer>
+    <div class="footer">
+        <footer class="footer">
+            <section>
+                <p class="footer-p1">Jonathan Ezequiel Ordoñez</p>
+                <p class="footer-p2"><a href="miemail@gmail.com">miemail@gmail.com</a></p>
+            </section>
+        </footer>
+    </div>
+</div>
+
 </html>
