@@ -20,7 +20,6 @@ $libros = ControladorFormularios::ctrSeleccionarLibros(null, null);
 
 ?>
 
-
 <table class="table">
     <thead>
         <tr>

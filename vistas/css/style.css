@@ -9,12 +9,13 @@ html {
 
 /*GRID LAYOUT */
 .grid-container {
+    height: 100%;
     display: grid;
-    grid-gap: 50px;
-    grid-template: 250px auto 250px / repeat(2, 50%);
+    grid-gap: 100px;
+    grid-template: auto auto auto / repeat(2, 50%);
     grid-template-areas: 
         "h h"
-        "form img"
+        "c c"
         "f f";
 }
 
@@ -24,8 +25,12 @@ html {
 
 .footer {
     grid-area: f;
+    grid-row: 3 / 4;
 }
 
+.table {
+    grid-area: c;
+}
 /*login.php*/
 .form {
     grid-column: 1/2;
@@ -37,6 +42,7 @@ html {
 
 /*HEADER*/
 header {
+    height: 270px;
     width: 100%;
     background-image: url("../imagenes/ladarkacademia.jpg");
     background-repeat: no-repeat;
@@ -45,7 +51,7 @@ header {
 }
 
 header h1 {
-    padding-top: 50px;
+    padding-top: 60px;
     font-family: 'Dancing Script';
     font-size: 80px;
     text-align: center;
@@ -57,7 +63,7 @@ header audio {
 }
 
 nav {
-    padding-top: 22px;
+    padding-top: 32px;
 }
 
 nav ul.menu {
@@ -100,20 +106,17 @@ nav ul.menu li a:active {
 /*FOOTER*/
 
 footer {
-    height: 250px;
+    height: 270px;
     width: 100%;
     background-image: url("../imagenes/footer.jpg");
     background-repeat: repeat-x;
     background-size: cover;
 
-    position: fixed;    
-    bottom: 0px;
-
-
     border: 2px black solid;
 }   
 
 .footer-p1 {
+    margin-top: 60px;
     font-family: 'Dancing Script';
     font-size: 80px;
     text-align: center;
@@ -138,8 +141,12 @@ footer a:hover {
 /*Login.php*/
 
 
-/* Zebra striping */
+
+
+/* Biblioteca.php*/
 .table { 
+    height: 336px;
+    grid-column: 1/3;
     border: solid 2px red;
     width: 100%; 
     border-collapse: collapse; 
@@ -158,7 +165,3 @@ td, th {
     border: 1px solid #ccc; 
     text-align: left; 
 }
-    /* 
-	Generic Styling, for Desktops/Laptops 
-	*/
-	
