@@ -13,7 +13,7 @@ html {
     width: 100%;
     height: 100%;
     display: grid;
-    grid-gap: 100px;
+    grid-gap: 50px 0px;
     grid-template: auto auto auto / repeat(2, 50%);
     grid-template-areas: 
         "h h"
@@ -36,8 +36,12 @@ html {
     grid-column: 1/3;
 }
 
-/*login.php*/
-.form {
+/*content*/
+.form1 {
+    grid-column: 1/2;
+}
+
+.form2 {
     grid-column: 1/2;
 }
 
@@ -45,7 +49,557 @@ html {
     grid-column: 2/3;
 }
 
-/*HEADER*/
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    /*HEADER*/
+header {
+    margin-bottom: 25px;
+    height: 284px;
+    width: 100%;
+    background-image: url("../imagenes/ladarkacademia.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header h1 {
+    font-family: 'Dancing Script';
+    font-size: 55px;
+    text-align: center;
+    color: #cce5ff;
+}
+
+header audio {
+    display: none;
+}
+
+nav {
+    padding-top: 5px;
+}
+
+nav ul.menu {
+    margin: 0px -15px -15px -15px;
+    padding: 0;
+    background: #0a0000d8;
+}
+
+nav ul.menu li{
+    list-style-type: none;
+    display: inline;
+    font-size: 12px;
+}
+
+nav ul.menu li a{
+    border: 1px solid black;
+    color:#cce5ff;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+
+/*sin visitar*/
+nav ul.menu li a:link.a1 {    
+    background-color: #f44336;
+}
+
+/*cuando pasas el mouse por arriba*/
+nav ul.menu li a:hover {
+    color:red;
+    text-decoration: underline;
+}
+
+/*al hacerle click*/
+nav ul.menu li a:active {
+    color: brown;
+    text-decoration: underline;
+}
+
+/*FOOTER*/
+footer {
+    margin-top: 75px;
+    height: 270px;
+    width: 100%;
+    background-image: url("../imagenes/footer.jpg");
+    background-repeat: repeat-x;
+    background-size: cover;
+
+    border: 2px black solid;
+}   
+
+.footer-p1 {
+    margin-top: 50px;
+    font-family: 'Dancing Script';
+    font-size: 50px;
+    text-align: center;
+    color: #cce5ff;
+}
+
+.footer-p2 {
+    text-align: center;
+    font-family: 'Dancing Script';
+    font-size: 35px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+/*agregarlibro.php*/
+h1{
+    font-family: 'Dancing Script';
+    font-size: 60px;
+    text-align: center;
+    color: #cce5ff;
+}
+
+p {
+    padding: 15px 0px;
+    text-align: center;
+    font-family: 'Dancing Script';
+    font-size: 30px;
+    color: #cce5ff;
+}
+
+.form1 {
+    grid-column: 1/3;
+
+    padding: 58px 0px;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Dancing Script';
+    color: #cce5ff;
+}
+
+.form2 {
+    grid-column: 1/3;
+
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Dancing Script';
+    color: #cce5ff;
+}
+
+.form-style {
+    padding: 10px 0px;
+}
+
+label {
+    color: #cce5ff;
+    padding: 10px;
+}
+
+.img {
+    display: none;
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+}
+
+/* Biblioteca.php*/
+.table { 
+    height: 436px;
+    grid-column: 1/3;
+    width: 100%; 
+    border-collapse: collapse; 
+}
+
+tr { 
+    background: #eee; 
+}
+
+th { 
+    background: #333; 
+    color: white; 
+    font-weight: bold; 
+}
+
+td, th { 
+    padding: 6px; 
+    border: 1px solid #ccc; 
+    text-align: left; 
+}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    /*HEADER*/
+header {
+    margin-bottom: 25px;
+    height: 270px;
+    width: 100%;
+    background-image: url("../imagenes/ladarkacademia.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header h1 {
+    padding-top: 115px;
+    font-family: 'Dancing Script';
+    font-size: 40px;
+    text-align: center;
+    color: #cce5ff;
+}
+
+header audio {
+    position: fixed;
+}
+
+nav {
+    padding-top: 32px;
+}
+
+nav ul.menu {
+    list-style-type: circle;  
+    list-style-position: outside; 
+    background: #0a0000d8;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+nav ul.menu li{
+    color: whitesmoke;
+    display: inline;
+    color: #cce5ff;
+}
+
+nav ul.menu li a{
+    color: #cce5ff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Dancing Script';
+}
+
+/*sin visitar*/
+nav ul.menu li a:link.a1 {    
+    background-color: #f44336;
+}
+
+/*cuando pasas el mouse por arriba*/
+nav ul.menu li a:hover {
+    color:red;
+    text-decoration: underline;
+}
+
+/*al hacerle click*/
+nav ul.menu li a:active {
+    color: brown;
+    text-decoration: underline;
+}
+
+/*FOOTER*/
+footer {
+    margin-top: 75px;
+    height: 270px;
+    width: 100%;
+    background-image: url("../imagenes/footer.jpg");
+    background-repeat: repeat-x;
+    background-size: cover;
+
+    border: 2px black solid;
+}   
+
+.footer-p1 {
+    margin-top: 50px;
+    font-family: 'Dancing Script';
+    font-size: 50px;
+    text-align: center;
+    color: #cce5ff;
+}
+
+.footer-p2 {
+    text-align: center;
+    font-family: 'Dancing Script';
+    font-size: 35px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+/*agregarlibro.php*/
+h1{
+    font-family: 'Dancing Script';
+    font-size: 75px;
+    text-align: center;
+    color: #cce5ff;
+}
+
+p {
+    padding: 15px 0px;
+    text-align: center;
+    font-family: 'Dancing Script';
+    font-size: 30px;
+    color: #cce5ff;
+}
+
+.form1 {
+    grid-column: 1/3;
+
+    padding: 58px 0px;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Dancing Script';
+    color: #cce5ff;
+}
+
+.form2 {
+    grid-column: 1/3;
+
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Dancing Script';
+    color: #cce5ff;
+}
+
+.form-style {
+    padding: 10px 0px;
+}
+
+label {
+    color: #cce5ff;
+    padding: 10px;
+}
+
+.img {
+    display: none;
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+}
+
+/* Biblioteca.php*/
+.table { 
+    height: 436px;
+    grid-column: 1/3;
+    width: 100%; 
+    border-collapse: collapse; 
+}
+
+tr { 
+    background: #eee; 
+}
+
+th { 
+    background: #333; 
+    color: white; 
+    font-weight: bold; 
+}
+
+td, th { 
+    padding: 6px; 
+    border: 1px solid #ccc; 
+    text-align: left; 
+}
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    /*HEADER*/
+header {
+    margin-bottom: 25px;
+    height: 270px;
+    width: 100%;
+    background-image: url("../imagenes/ladarkacademia.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header h1 {
+    padding-top: 84px;
+    font-family: 'Dancing Script';
+    font-size: 60px;
+    text-align: center;
+    color: #cce5ff;
+}
+
+header audio {
+    position: fixed;
+}
+
+nav {
+    padding-top: 32px;
+}
+
+nav ul.menu {
+    list-style-type: circle;  
+    list-style-position: outside; 
+    background: #0a0000d8;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+nav ul.menu li{
+    color: whitesmoke;
+    display: inline;
+    color: #cce5ff;
+}
+
+nav ul.menu li a{
+    color: #cce5ff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Dancing Script';
+}
+
+/*sin visitar*/
+nav ul.menu li a:link.a1 {    
+    background-color: #f44336;
+}
+
+/*cuando pasas el mouse por arriba*/
+nav ul.menu li a:hover {
+    color:red;
+    text-decoration: underline;
+}
+
+/*al hacerle click*/
+nav ul.menu li a:active {
+    color: brown;
+    text-decoration: underline;
+}
+
+/*FOOTER*/
+footer {
+    margin-top: 61px;
+    height: 270px;
+    width: 100%;
+    background-image: url("../imagenes/footer.jpg");
+    background-repeat: repeat-x;
+    background-size: cover;
+
+    border: 2px black solid;
+}   
+
+.footer-p1 {
+    margin-top: 50px;
+    font-family: 'Dancing Script';
+    font-size: 80px;
+    text-align: center;
+    color: #cce5ff;
+}
+
+.footer-p2 {
+    text-align: center;
+    font-family: 'Dancing Script';
+    font-size: 35px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+/*agregarlibro.php*/
+h1{
+    font-family: 'Dancing Script';
+    font-size: 60px;
+    text-align: center;
+    color: #cce5ff;
+}
+
+p {
+    padding: 15px 0px;
+    text-align: center;
+    font-family: 'Dancing Script';
+    font-size: 40px;
+    color: #cce5ff;
+}
+
+.form1 {
+    padding: 58px 0px;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Dancing Script';
+    color: #cce5ff;
+}
+
+.form2 {
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Dancing Script';
+    color: #cce5ff;
+}
+
+.form-style {
+    padding: 10px 0px;
+}
+
+label {
+    color: #cce5ff;
+    padding: 10px;
+}
+
+.img {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+}
+
+/* Biblioteca.php*/
+.table { 
+    height: 436px;
+    grid-column: 1/3;
+    width: 100%; 
+    border-collapse: collapse; 
+}
+
+tr { 
+    background: #eee; 
+}
+
+th { 
+    background: #333; 
+    color: white; 
+    font-weight: bold; 
+}
+
+td, th { 
+    padding: 6px; 
+    border: 1px solid #ccc; 
+    text-align: left; 
+}
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    /*HEADER*/
 header {
     height: 270px;
     width: 100%;
@@ -123,7 +677,7 @@ footer {
 }   
 
 .footer-p1 {
-    margin-top: 60px;
+    margin-top: 50px;
     font-family: 'Dancing Script';
     font-size: 80px;
     text-align: center;
@@ -149,7 +703,7 @@ footer a:hover {
 /*agregarlibro.php*/
 h1{
     font-family: 'Dancing Script';
-    font-size: 120px;
+    font-size: 80px;
     text-align: center;
     color: #cce5ff;
 }
@@ -162,7 +716,16 @@ p {
     color: #cce5ff;
 }
 
-.form {
+.form1 {
+    padding-top: 70px;
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Dancing Script';
+    color: #cce5ff;
+}
+
+.form2 {
     width: 100%;
     text-align: center;
     font-size: 35px;
@@ -180,14 +743,15 @@ label {
 }
 
 .img {
-    max-width: 550px;
+    max-width: 450px;
     width: 100%;
     height: auto;
+    margin: 0px auto;
 }
 
 /* Biblioteca.php*/
 .table { 
-    height: 336px;
+    height: 436px;
     grid-column: 1/3;
     width: 100%; 
     border-collapse: collapse; 
@@ -208,28 +772,180 @@ td, th {
     border: 1px solid #ccc; 
     text-align: left; 
 }
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) and (max-width: 768px) {
-
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+    /*HEADER*/
+header {
+    height: 270px;
+    width: 100%;
+    background-image: url("../imagenes/ladarkacademia.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
+header h1 {
+    padding-top: 60px;
+    font-family: 'Dancing Script';
+    font-size: 80px;
+    text-align: center;
+    color: #cce5ff;
+}
+
+header audio {
+    position: fixed;
+}
+
+nav {
+    padding-top: 32px;
+}
+
+nav ul.menu {
+    list-style-type: circle;  
+    list-style-position: outside; 
+    background: #0a0000d8;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+nav ul.menu li{
+    color: whitesmoke;
+    display: inline;
+    color: #cce5ff;
+}
+
+nav ul.menu li a{
+    color: #cce5ff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Dancing Script';
+}
+
+/*sin visitar*/
+nav ul.menu li a:link.a1 {    
+    background-color: #f44336;
+}
+
+/*cuando pasas el mouse por arriba*/
+nav ul.menu li a:hover {
+    color:red;
+    text-decoration: underline;
+}
+
+/*al hacerle click*/
+nav ul.menu li a:active {
+    color: brown;
+    text-decoration: underline;
+}
+
+/*FOOTER*/
+footer {
+    height: 270px;
+    width: 100%;
+    background-image: url("../imagenes/footer.jpg");
+    background-repeat: repeat-x;
+    background-size: cover;
+
+    border: 2px black solid;
+}   
+
+.footer-p1 {
+    margin-top: 50px;
+    font-family: 'Dancing Script';
+    font-size: 80px;
+    text-align: center;
+    color: #cce5ff;
+}
+
+.footer-p2 {
+    text-align: center;
+    font-family: 'Dancing Script';
+    font-size: 35px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+/*agregarlibro.php*/
+h1{
+    font-family: 'Dancing Script';
+    font-size: 100px;
+    text-align: center;
+    color: #cce5ff;
+}
+
+p {
+    padding: 15px 0px;
+    text-align: center;
+    font-family: 'Dancing Script';
+    font-size: 40px;
+    color: #cce5ff;
+}
+
+.form1 {
+    margin-top: 70px;
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Dancing Script';
+    color: #cce5ff;
+}
+
+.form2{
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Dancing Script';
+    color: #cce5ff;
+}
+.form-style {
+    padding: 10px 0px;
+}
+
+label {
+    color: #cce5ff;
+    padding: 10px;
+}
+
+.img {
+    max-width: 550px;
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+}
+
+/* Biblioteca.php*/
+.table { 
+    height: 436px;
+    grid-column: 1/3;
+    width: 100%; 
+    border-collapse: collapse; 
+}
+
+tr { 
+    background: #eee; 
+}
+
+th { 
+    background: #333; 
+    color: white; 
+    font-weight: bold; 
+}
+
+td, th { 
+    padding: 6px; 
+    border: 1px solid #ccc; 
+    text-align: left; 
+}
 }

@@ -1,4 +1,4 @@
-<form class="form" action="" method="POST"> 
+<form class="form1" action="" method="POST"> 
     <h1>Administracion</h1>
     <div class="form-style">
         <label for="usuario">Usuario</label> 
