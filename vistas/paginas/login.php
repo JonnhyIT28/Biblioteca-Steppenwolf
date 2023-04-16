@@ -1,21 +1,19 @@
-<div class="form">
-    <h2 class="contacto_h2">Administracion</h2>
-        <form class="contacto_form1" action="" method="POST"> 
-            <label for="usuario">Usuario</label> 
-            <input type="text" id="usuario" name="ingresoUsuario"/> 
-            <br>
-            <label for="password">Clave</label>
-            <input type="password" id="password" name="ingresoPassword"/>
-            <br>
-            <?php
-                require_once "controladores/formularios.controlador.php";
-                $ingreso = new ControladorFormularios();
-                $ingreso -> ctrIngreso();
-            ?> 
-            <input type="submit" value = "Ingresar"/>
-        </form>
-</div>
+<form class="form" action="" method="POST"> 
+    <h1>Administracion</h1>
+    <div class="form-style">
+        <label for="usuario">Usuario</label> 
+        <input type="text" id="usuario" name="ingresoUsuario"/> 
+    </div>
+    <div class="form-style">
+        <label for="password">Clave</label>
+        <input type="password" id="password" name="ingresoPassword"/>
+    </div>
+    <?php
+        require_once "controladores/formularios.controlador.php";
+        $ingreso = new ControladorFormularios();
+        $ingreso -> ctrIngreso();
+    ?> 
+    <input type="submit" value = "Ingresar"/>
+</form>
 
-<div class="img">
-    <img class="img" src="vistas/imagenes/libros.png" >
-</div>
+<img class="img" src="vistas/imagenes/libros.png" >

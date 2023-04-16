@@ -9,6 +9,8 @@ html {
 
 /*GRID LAYOUT */
 .grid-container {
+    max-width: 100%;
+    width: 100%;
     height: 100%;
     display: grid;
     grid-gap: 100px;
@@ -29,7 +31,7 @@ html {
 }
 
 .table {
-    grid-area: c;
+    grid-column: 1/3;
 }
 /*login.php*/
 .form {
@@ -141,13 +143,52 @@ footer a:hover {
 /*Login.php*/
 
 
+/*agregarlibro.php*/
+h1{
+    font-family: 'Dancing Script';
+    font-size: 120px;
+    text-align: center;
+    color: #cce5ff;
+}
+
+p {
+    padding: 15px 0px;
+    text-align: center;
+    font-family: 'Dancing Script';
+    font-size: 40px;
+    color: #cce5ff;
+}
+
+.form {
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Dancing Script';
+    color: #cce5ff;
+}
+
+.form-style {
+    padding: 10px 0px;
+}
+
+label {
+    color: #cce5ff;
+    padding: 10px;
+}
+
+.img {
+    max-width: 550px;
+    width: 100%;
+    height: auto;
+}
+
+
 
 
 /* Biblioteca.php*/
 .table { 
     height: 336px;
     grid-column: 1/3;
-    border: solid 2px red;
     width: 100%; 
     border-collapse: collapse; 
 }
