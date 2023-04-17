@@ -71,7 +71,7 @@ session_start();
         <footer class="footer">
             <section>
                 <p class="footer-p1">Jonathan Ezequiel Ordoñez</p>
-                <p class="footer-p2"><a href="miemail@gmail.com">miemail@gmail.com</a></p>
+                <p class="footer-p2"><a href="JonnhyDev@gmail.com">JonnhyDev@gmail.com</a></p>
             </section>
         </footer>
 </div>
