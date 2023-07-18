@@ -51,18 +51,18 @@ session_start();
     <body>
         <?php
             if (isset($_GET['ruta'])){
-            if(
-                $_GET['ruta'] == "login" ||
-                $_GET['ruta'] == "agregarlibro" ||
-                $_GET['ruta'] == "biblioteca" ||
-                $_GET['ruta'] == "editar" ||
-                $_GET['ruta'] == "fin"
-            ){
-                include "vistas/paginas/" . $_GET["ruta"] .".php";
-            } else{
-            include "vistas/paginas/error404.php";
-                } 
+                if(
+                    $_GET['ruta'] == "login" ||
+                    $_GET['ruta'] == "agregarlibro" ||
+                    $_GET['ruta'] == "biblioteca" ||
+                    $_GET['ruta'] == "editar" ||
+                    $_GET['ruta'] == "fin"
+                ){
+                    include "vistas/paginas/" . $_GET["ruta"] .".php";
                 } else{
+                    include "vistas/paginas/error404.php";
+                    } 
+            } else{
                 include "vistas/paginas/login.php";
             }
         ?>

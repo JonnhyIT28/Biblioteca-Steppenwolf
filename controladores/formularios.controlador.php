@@ -22,7 +22,7 @@ class ControladorFormularios{
 
                 }
 
-                window.location = "index.php?ruta=biblioteca";
+                window.location = "index.php?ruta=agregarlibro";
 
             </script>';
             }   else {
