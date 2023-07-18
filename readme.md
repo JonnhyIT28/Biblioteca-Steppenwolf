@@ -1,5 +1,9 @@
 ------------------------BIBLIOTECA STEPPENWOLF-----------------------
+
 URL: https://biblioteca-steppenwolf.000webhostapp.com/
+
+Usuario:admin
+Contraseña:admin123
 
 -Esta pagina esta creada como base de datos de una biblioteca, como herramienta para el/la bibliotecario/a, 
 en la cual se agregan, modifican, visualizan o eliminan libros de la base de datos.
