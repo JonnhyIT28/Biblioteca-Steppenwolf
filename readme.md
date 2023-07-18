@@ -20,5 +20,7 @@ Por ultimo, en la seccion 'Cerrar Sesion" se cierra la SESSION iniciada en "Logi
 
 EL CRUD esta realizado en PDO con MVC en POO
 
+Se evaluo solo en backend, el front-end fue aprendido de forma autodidacta sobre la marcha, por eso hay erorres de CSS a corregir, el objetivo es mudarlo a Bootstrap 5 con lo aprendido en mi proyecto "Aurora"
+
 Esta web es parte del proyecto para la certificacion de "Experto universitario con conocimientos en PHP y MySQL" de la UTN.
 -------------------Creado por Jonathan Ezequiel Ordoñez-----------------
